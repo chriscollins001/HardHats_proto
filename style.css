@@ -1,0 +1,70 @@
+			body {
+				background: #fcfcfc;
+				font-family: 'Roboto', sans-serif;
+			}
+		
+		h2 {
+			font-size: 1.8em;
+			margin-top: 0.4em;
+		}
+		
+			.activity-feed .card-body {
+				padding-right: 2rem;				
+			}
+			
+			.activity-feed .card-title {
+				font-size: 1.1rem;
+			}
+
+			.activity-feed .card-subtitle {
+				font-size: 0.9rem;
+			}
+			
+			.activity-feed .card {
+				margin-top: 1em;
+			}
+	
+			.navbar-brand .navbar-toggler {
+				border: none;				
+			}
+	
+			.badge-primary, .btn-primary {
+				color: #fff;
+				background-color: #fd8b02;
+				border-color: #d1551f;
+			}	
+	
+			.btn-primary:hover {
+				color: #fff;
+				background-color: #fea900;
+				border-color: #ea7700;
+			}
+			
+			.bg-dark {
+				background: #222 !important;
+			}
+			
+			.title-bar {
+				border-bottom: 1px solid #888;
+				position: relative;
+				padding-bottom: 0.2em;
+			}
+			
+			.title-bar div {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			
+			.documents .card {
+				background: url(arrow_right.png) no-repeat right center;
+			}
+			
+			.documents .card-body {
+				margin-right: 32px;
+			}
+			
+			.documents .card:hover {
+				background-color: #ffe9bd;
+				border-color: #fd8b02;				
+			}
