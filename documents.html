@@ -13,16 +13,16 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
 				<a class="navbar-brand" onclick="ToggleSideMenu()"><img src="hh_logo.png" style="height:28px;" /></a>
-				<input type="text" style="width:calc(100% - 54px)" placeholder="Search messages..." class="form-control input-search" onchange="SearchDocuments()" onkeyup="SearchDocuments()" />
+				<input type="text" style="width:calc(100% - 54px)" placeholder="Search documents..." class="form-control input-search" onchange="SearchDocuments()" onkeyup="SearchDocuments()" />
 			</div>
 		</nav>
 		<div class="fixed-bottom bg-dark">
 			<div class="container">
 				<div class="row">
-					<div class="col col-3 text-center" onclick="document.location.href='documents.html'">
+					<div class="col col-3 text-center active" onclick="document.location.href='documents.html'">
 						<a class="btn btn-nav" href="documents.html"><i class="fa fa-file fa-fw"></i></a>
 					</div>
-					<div class="col col-3 text-center active" onclick="document.location.href='messages.html'">
+					<div class="col col-3 text-center" onclick="document.location.href='messages.html'">
 						<a class="btn btn-nav"><i class="fa fa-comments fa-fw"></i></a>
 					</div>
 					<div class="col col-3 text-center" onclick="document.location.href='people.html'">
@@ -36,7 +36,7 @@
 		</div>
 		<div class="container documents">
 			<div class="title-bar mb-3">
-				<h2 class="text-left">Messages</h2>
+				<h2 class="text-left">Documents</h2>
 				<div class="pull-right text-right">
 					<button class="btn btn-light mr-1 btn-add"><i class="fa fa-plus"></i></button>
 				</div>
@@ -54,6 +54,72 @@
 				</select>
 			</div>
 			<div class="row-document-container">
+				<div class="row row-document" data-name="Amherst Building Reno. Project Estimates" data-author="Jill Carson" data-date="2018-01-31" data-description="The project estimates for the Amherst Building renovation.">
+					<div class="col">
+						<div class="card mb-2">
+							<div class="card-body">
+								<h5 class="card-title">Amherst Building Reno. Project Estimates</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Jill Carson - Jan 31, 2018</h6>
+								<div class="card-text">The project estimates for the Amherst Building renovation.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-document" data-name="Amherst Building Reno. Project Plan" data-author="Jill Carson" data-date="2018-02-02" data-description="The project plan for the Amherst Building renovation.">
+					<div class="col">
+						<div class="card mt-2 mb-2">
+							<div class="card-body">
+								<h5 class="card-title">Amherst Building Reno. Project Plan</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Jill Carson - Feb 2, 2018</h6>
+								<div class="card-text">The project plan for the Amherst Building renovation.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-document" data-name="Redwood Power Station Blueprints" data-author="Timothy Brown" data-date="2018-02-21" data-description="Blueprints for the  Redwoord Power Station project.  Final draft">
+					<div class="col">
+						<div class="card mt-2 mb-2">
+							<div class="card-body">
+								<h5 class="card-title">Redwood Power Station Blueprints</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Timothy Brown - Feb 21, 2018</h6>
+								<div class="card-text">Blueprints for the  Redwoord Power Station project.  Final draft.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-document" data-name="Valencia Cinemark Blueprints" data-author="Jill Carson" data-date="2018-01-03" data-description="Blueprints for the  Valencia Cinemark new construction">
+					<div class="col">
+						<div class="card mt-2 mb-2">
+							<div class="card-body">
+								<h5 class="card-title">Valencia Cinemark Blueprints</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Jill Carson - Jan 3, 2018</h6>
+								<div class="card-text">Blueprints for the  Valencia Cinemark new construction.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-document" data-name="Valencia Cinemark Project Estimates" data-author="Carlos Jimenez" data-date="2018-01-12" data-description="The project estimates for the Valencia Cinemark new construction">
+					<div class="col">
+						<div class="card mt-2 mb-2">
+							<div class="card-body">
+								<h5 class="card-title">Valencia Cinemark Project Estimates</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Carlos Jimenez - Jan 12, 2018</h6>
+								<div class="card-text">The project estimates for the Valencia Cinemark new construction.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row row-document" data-name="Valencia Cinemark Project Plan" data-author="Carlos Jimenez" data-date="2018-01-12" data-description="The project plan for the Valencia Cinemark new construction">
+					<div class="col">
+						<div class="card mt-2 mb-2">
+							<div class="card-body">
+								<h5 class="card-title">Valencia Cinemark Project Plan</h5>
+								<h6 class="card-subtitle mb-2 text-muted">Carlos Jimenez - Jan 12, 2018</h6>
+								<div class="card-text">The project plan for the Valencia Cinemark new construction.</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="side-menu bg-dark" style="display:none;">

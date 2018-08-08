@@ -12,52 +12,41 @@
 	<body>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
-				<a class="navbar-brand" href="home.html"><img src="hh_logo.png" style="height:28px;" /></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="home.html">Documents</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="messages.html">Messages <span class="badge badge-primary">1</span></a>
-						</li>	
-						<li class="nav-item active">
-							<a class="nav-link" href="admin.html">Admin</a>
-						</li>	
-					</ul>
-					<ul class="navbar-nav ">
-						<!-- PROFILE DROPDOWN - scrolling off the page to the right -->
-						<li class="nav-item dropdown">
-							<a href="#" class="nav-link dropdown-toggle" id="navDropDownLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-								Kyle Johnson
-							</a>
-							<div class="dropdown-menu" aria-labelledby="navDropDownLink">
-								<a class="dropdown-item" href="preferences.html">Preferences</a>
-								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="login.html">Logout</a>
-							</div>
-						</li>
-					</ul>							
-				</div>			
+				<a class="navbar-brand" onclick="ToggleSideMenu()"><img src="hh_logo.png" style="height:28px;" /></a>
 			</div>
-		</nav>	
-		<div class="container documents">
-			<div class="title-bar">
-				<h2 class="text-left">Admin</h2>		
-			</div>			
-			<div class="row">
-				<div class="col">
-					Under Construction
-				</div>			
+		</nav>
+		<div class="fixed-bottom bg-dark">
+			<div class="container">
+				<div class="row">
+					<div class="col col-12 text-center">
+						<a class="btn btn-primary btn-save mt-2 mb-2"><i class="fa fa-save fa-fw mr-1"></i> Save</a>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="container documents">
+			<div class="title-bar mb-3">
+				<h2 class="text-left">Admin</h2>
+			</div>
+			<div class="row-document-container">
+			</div>
+		</div>
+		<div class="side-menu bg-dark" style="display:none;">
+			<a onclick="ToggleSideMenu()" style="font-size:1.6rem;"><img src="hh_logo.png" style="height:28px;margin-right:0.6rem;" /> HardHats</a>
+			<ul class="mt-2 nav-list">
+				<li><a href="documents.html"><i class="fa fa-file fa-fw mr-2"></i> Documents</a></li>
+				<li><a href="messages.html"><i class="fa fa-comments fa-fw mr-2"></i> Messages <span class="badge badge-new-messages ml-2">1</span></a></li>
+				<li><a href="people.html"><i class="fa fa-users fa-fw mr-2"></i> People</a></li>
+				<li><a href="admin.html"><i class="fa fa-gear fa-fw mr-2"></i> Admin</a></li>
+				<li><a href="profile.html"><i class="fa fa-user fa-fw mr-2"></i> Profile</a></li>
+				<li><a href="help.html"><i class="fa fa-question-circle fa-fw mr-2"></i> Help</a></li>
+			</ul>
+		</div>
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="home.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 	</body>
 </html>

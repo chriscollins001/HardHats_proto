@@ -13,45 +13,20 @@
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container">
 				<a class="navbar-brand" onclick="ToggleSideMenu()"><img src="hh_logo.png" style="height:28px;" /></a>
-				<input type="text" style="width:calc(100% - 54px)" placeholder="Search messages..." class="form-control input-search" onchange="SearchDocuments()" onkeyup="SearchDocuments()" />
 			</div>
 		</nav>
 		<div class="fixed-bottom bg-dark">
 			<div class="container">
 				<div class="row">
-					<div class="col col-3 text-center" onclick="document.location.href='documents.html'">
-						<a class="btn btn-nav" href="documents.html"><i class="fa fa-file fa-fw"></i></a>
-					</div>
-					<div class="col col-3 text-center active" onclick="document.location.href='messages.html'">
-						<a class="btn btn-nav"><i class="fa fa-comments fa-fw"></i></a>
-					</div>
-					<div class="col col-3 text-center" onclick="document.location.href='people.html'">
-						<a class="btn btn-nav"><i class="fa fa-users fa-fw"></i></a>
-					</div>
-					<div class="col col-3 text-center" onclick="document.location.href='help.html'">
-						<a class="btn btn-nav"><i class="fa fa-question-circle fa-fw"></i></a>
+					<div class="col col-12 text-center">
+						<a class="btn btn-primary btn-save mt-2 mb-2"><i class="fa fa-save fa-fw mr-1"></i> Save</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="container documents">
 			<div class="title-bar mb-3">
-				<h2 class="text-left">Messages</h2>
-				<div class="pull-right text-right">
-					<button class="btn btn-light mr-1 btn-add"><i class="fa fa-plus"></i></button>
-				</div>
-			</div>
-			<div class="form-group mt-1 sort-control">
-				<label class="mr-1">Sort By</label>
-				<select class="form-control mr-1 input-sort" style="width:auto !important;display:inline-block;" onchange="UpdateSort()">
-					<option value="n" selected>Name</option>
-					<option value="a">Author</option>
-					<option value="d">Date</option>
-				</select>
-				<select class="form-control mr-1 input-sort-direction" style="width:auto !important;display:inline-block;" onchange="UpdateSort()">
-					<option value="a" selected>Ascending</option>
-					<option value="d">Descending</option>
-				</select>
+				<h2 class="text-left">Profile</h2>
 			</div>
 			<div class="row-document-container">
 			</div>

@@ -1,6 +1,7 @@
 			body {
 				background: #fcfcfc;
 				font-family: 'Roboto', sans-serif;
+				padding-bottom: 60px;
 			}
 
 		h2 {
@@ -28,22 +29,6 @@
 				border: none;
 			}
 
-			.badge-primary, .btn-primary {
-				color: #fff;
-				background-color: #fd8b02;
-				border-color: #d1551f;
-			}
-
-			.btn-primary:hover {
-				color: #fff;
-				background-color: #fea900;
-				border-color: #ea7700;
-			}
-
-			.bg-dark {
-				background: #222 !important;
-			}
-
 			.title-bar {
 				border-bottom: 1px solid #ccc;
 				position: relative;
@@ -58,13 +43,62 @@
 
 			.documents .card {
 				background: url(arrow_right.png) no-repeat right center;
+				cursor: pointer;
 			}
 
 			.documents .card-body {
 				margin-right: 32px;
 			}
 
-			.documents .card:hover {
-				background-color: #ffe9bd;
-				border-color: #fd8b02;
-			}
+ 		.btn-nav, .btn-nav:hover, .btn-nav:active, .btn-nav:focus, .btn-nav:active {
+			color: #eee;
+			font-size: 1.2rem;
+			width:48px;
+			background: transparent !important;
+			color: #eee !important;
+			text-align: center;
+			border: none;
+		}
+
+		 .btn-login,
+		 .btn-login:hover,
+		 .btn-login:active,
+		 .btn-login:focus,
+		 .btn-save,
+		 .btn-save:hover,
+		 .btn-save:active,
+		 .btn-save:focus,
+		 .col.active,
+		 .badge-new-messages {
+			background-color: #f89903 !important;
+			border: 1px solid #e98004 !important;
+			color: #eee !important;
+		}
+
+.side-menu {
+	padding: 0.6rem 1rem;
+  width:      100%;
+  height:     100%;
+  z-index:    99999;
+  top:        0;
+  left:       0;
+  position:   fixed;
+	color: #eee;
+}
+
+.nav-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav-list a, .nav-list a:hover {
+	display: block;
+	padding: 1rem;
+	background: #15181a;
+	margin: 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	color: #eee;
+	text-decoration: none;
+}

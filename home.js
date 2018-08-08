@@ -57,3 +57,7 @@ function SearchDocuments() {
     $(visibleDocs).show();
   }
 }
+
+function ToggleSideMenu(show) {
+    $('.side-menu').toggle('slide');
+}
